@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Portfolio</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffffff;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            background-color: #1d1b1b;           
+        }
+
+        header {
+            padding: 12px;
+            text-align: center;
+            padding-left: 12px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .box {
+            width: 40%;
+            background: linear-gradient(45deg, #6c5ce7, #00d2d3);
+            border: 2px solid #00d2d3;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 15px rgba(0, 210, 211, 0.5);  
+            padding: 20px;
+            padding-top: 10px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            transition: transform 0.3s ease-in-out;
+            
+        }
+
+        .projects {
+            width: 100%;
+            border: 2px solid #00d2d3;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 15px rgba(0, 210, 211, 0.5);           
+            padding: 20px;
+            padding-top: 10px;
+            margin-top:30px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .box:hover, .projects:hover, .project:hover, .profile-picture:hover {
+            transform: translateY(-10px);
+        }
+
+        h2 {
+            margin-top: 5px;
+            text-align: center; 
+        }
+
+        h3 {
+            margin-top: 0;
+        }
+
+        .row {
+            flex: 1;
+            margin-right: 40px;
+            float: right;
+            
+        }
+
+        a {
+            text-decoration: none;
+            color:aquamarine;
+            
+        }
+
+        a:hover{
+            color: #1d1b1b;
+        }
+
+        .project{ 
+            width: 45%;                   
+            border: 2px solid #fff;
+            background: linear-gradient(45deg, #6c5ce7, #00d2d3);
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 15px rgba(0, 210, 211, 0.5);
+            padding: 10px;
+            margin: 0px;
+            margin-top: 20px;
+            transition: transform 0.3s ease-in-out;
+            
+        }
+
+        .title{
+            width: 100%;
+            background-color: #1d1b1b;
+        }
+
+        .profile-container {
+            width: 95%;
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+            margin: 0px;
+            padding: 20px;
+            background: linear-gradient(45deg, #6c5ce7, #00d2d3);
+            border: 2px solid #00d2d3;
+        }
+
+        .profile-picture {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .profile-picture img {
+            width: 235px;
+            height: 235px;
+            border-radius: 8px; 
+            border: 4px solid #00d2d3;
+            box-shadow: 0 0 10px rgba(0, 210, 211, 0.5);
+        }
+
+
+        .profile-details {
+            flex: 3;
+            padding-left: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        
+        <div class="profile-container">
+            <div class="profile-picture">
+                <img src="pic.jpg" alt="Profile Picture">
+            </div>
+            <div class="profile-details">
+                <h2>Introduction</h2><hr>
+                <p><strong>Name:</strong> Aanchal Nancy Jha</p>
+                <p><strong>DOB:</strong> July 23, 2006</p>
+                <p><strong>Education:</strong> High School Student</p>
+                <p><strong>Email:</strong> nancyjha2006@gmail.com</p>
+                <p><strong>Phone:</strong> +977 9823169001</p>
+            </div>
+        </div>
+        
+        
+    </header>
+    
+    <div class="container">
+
+        <div class="box">
+            <h2>Skills</h2><hr>
+            <div class="row">
+                <h3>Technologies</h3><hr>
+                <li>Django</li>
+                <li>Pygame</li>
+                <li>MariaDB</li>
+            </div>
+
+            <div class="row">
+                <h3>Languages</h3><hr>
+                <li>Python</li>
+                <li>HTML and CSS</li>
+                <li>Javascript</li>
+                <li>PHP</li>
+                <li>C/C++</li>
+            </div>
+        </div>
+        
+        
+
+        <div class="box">
+            <h2>Hobbies</h2><hr>
+            <li>Game development</li>
+            <li>Creating personal projects</li>
+            <li>Making coding tutorials on YoutTube </li>
+            <li>Reading tech related content</li>
+            <li>Learning new technologies</li>
+        </div>
+
+
+        <div class="projects">
+            <div class="title"><h2>Solo Projects</h2><hr></div>
+            <div class="project">
+                <h2>UFO Shooter Game</h2> 
+
+                <i><b>Languages: Python 
+                <br>Technologies: Pygame</b></i>
+                <hr>
+
+                <li>A modified version of the legendary UFO Shooter game.</li>
+                <li>Introduces a challenging boss level.</li>
+                <li>Difficulty increases as the game progresses.</li>
+                <li>Offers a never-ending gameplay experience.</li>
+                <li><a href="https://github.com/NancyAanchal/Modified-UFO-Shooter">Check on Github</a></li>
+                <li><a href="https://nancyaanchal.itch.io/modified-ufo-shooter">Download on Itch</a></li>
+            </div>
+
+            <div class="project">
+                <h2>Real Time Chat Application</h2>
+
+                <i><b>Languages: Python, Javascript, HTML, CSS 
+                <br>Technologies: Django</b></i>
+                <hr>
+
+                <li>Create and join chat rooms using a room code</li>
+                <li>Real-time messaging with WebSockets</li>
+                <li>Anonymous chat without requiring user registration</li>
+                <li><a href="https://github.com/NancyAanchal/Anonymous-chat-app/tree/master">Check on Github</a></li>
+            </div>
+
+            <div class="project">
+                <h2>To Do List App</h2>
+
+                <i><b>Languages: Python, Javascript, HTML, CSS 
+                <br>Technologies: Django</b></i>
+                <hr>
+
+                <i><b>Made in Django</b></i>
+                <li> User authentication (Login and Logout)</li>
+                <li>Create, read, update, and delete tasks</li>
+                <li>Search tasks</li>
+                <li>Responsive design</li>
+                <li>Email notification for password reset</li>
+                <li><a href="https://github.com/NancyAanchal/To-Do-List">Check on Github</a></li>
+            </div>
+
+            <div class="project">
+                <h2>Digit Recogniser</h2>
+
+                <i><b>Languages: Python 
+                <br>Technologies: Sci-kit learn, Jupyter Notebook</b></i>
+                <hr>
+
+                <i><b>Made in Django</b></i>
+                <li>Recognize handwritten digits from 0 to 9</li>
+                <li>Predict the number when provided with an image of a digit</li>
+                <li>User-friendly Jupyter Notebook interface</li>
+                <li><a href="https://github.com/NancyAanchal/Digits-recognizer/tree/master">Check on Github</a></li>
+            </div>
+
+        </div>
+
+        <div class="projects">
+            <div class="title"><h2>Collaborative Projects</h2><hr></div>
+            <div class="project">
+                <h2>DiscourseGPT</h2>
+
+                <i><b>Languages: Python, Javascript, HTML, CSS 
+                <br>Technologies: Django, Vue</b></i>
+                <hr>
+
+                <li>An AI working on custome data</li>
+                <li>Answers in gramatically correct Nepali</li>
+                <li>Voice call feature</li>
+                <li><a href="https://youtu.be/60YoTm82cZ8?feature=shared">Check on Yoututbe</a></li>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+</html>
+
